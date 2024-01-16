@@ -1,0 +1,143 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and text color to the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Style the main container */
+.main {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 20px 20px 20px rgb(0, 55, 255);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Style the heading */
+.heading h1 {
+    color: #3498db;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Style the options container */
+.options {
+    margin-top: 20px;
+}
+
+/* Style the form container */
+.form {
+    margin-top: 20px;
+    display: none; /* Initially hide the form */
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Style the form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+/* Style form select elements */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Change border color on focus */
+select:focus {
+    border-color: #3498db;
+}
+
+/* Style form submit button */
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Change background color on hover */
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Add a subtle box shadow to the form on hover */
+.form:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a before pseudo-element to the submit button */
+input[type="submit"]::before {
+    content: '\1F4CB'; /* Unicode symbol for a graduation cap */
+    margin-right: 5px;
+}
+
+/* Add pulse animation to the submit button on hover */
+input[type="submit"]:hover {
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* Define the pulse animation */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.sub {
+    display: none;
+}
+
+.allform {
+    display: none;
+}
+
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Define the slideIn animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.details{
+    display: none;
+}

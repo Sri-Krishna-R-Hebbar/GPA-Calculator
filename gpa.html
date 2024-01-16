@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="./gpa.css">
+</head>
+<body class="body">
+    <div class="main">
+        <div class="sparkles"></div>
+        <div class="heading"><h1>GPA Generator</h1></div>
+        <div class="options">
+            <div class="sems">
+                <label for="sem">Select Your Semester:</label>
+                <select name="sem" id="sem" onchange="showSubjects()">
+                    <option value="" disabled selected>Select Semester</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+            <div class="sub" >
+                <label for="sub">Select Your Subject:</label>
+                <select name="sub" id="subjects" onchange="showDetails()">
+                    
+                </select>
+            </div>
+        </div>
+        <div class="allform">
+            <form action="./gpa.js" method="get">
+                <div class="allInputs">
+                    
+                </div>
+            </form>
+        </div>
+        <div class="details">
+            
+        </div>
+        <div class="download">
+            
+        </div>
+    </div>
+    <script src="./gpa.js"></script>
+</body>
+</html>
